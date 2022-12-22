@@ -21,6 +21,7 @@
   padding: 2em;
   border-radius: 8px;
   pointer-events: all;
+  overflow-x: hidden;
 }
 
 .timePickingModal__Wrapper {
@@ -89,7 +90,7 @@
 }
 
 .timePickingModal__Wrapper__bodyWrapper__timeWrapper__list {
-  @media (max-width: $breakpointMobile) {
+  @media (max-width: $breakpointTablet) {
     flex-flow: column;
   }
   display: flex;

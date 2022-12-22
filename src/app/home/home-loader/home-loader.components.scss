@@ -11,6 +11,7 @@
   width: 100vw;
   height: 100vh;
   z-index: 999;
+  overflow-x: hidden;
   &:before {
     animation: loaderDuration--background 3s linear forwards;
     content: '';
@@ -24,6 +25,9 @@
 }
 
 .loader__lottie {
+  @media (max-width: $breakpointMobile) {
+    width: 300px;
+  }
   animation: loaderDuration 2.7s linear forwards;
   width: 600px;
   margin: auto;
